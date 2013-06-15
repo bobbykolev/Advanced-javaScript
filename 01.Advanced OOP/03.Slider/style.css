@@ -64,7 +64,7 @@ img
 	border: 1px solid #ccc;
 	background: #fff;
 	margin: auto;
-	border-radius: 8px;
+	border-radius: 3px;
 }
 #thumbs-container
 {
@@ -95,6 +95,26 @@ img
 #thumbs-list li img:hover
 {
 	opacity: 1;
+}
+#imgTitle
+{
+	position: absolute;
+	background: rgba(135,196,28,0.8);
+	width: 565px; 
+	min-height: 0;
+	text-align: left;
+}
+#imgTitle>h2
+{
+	float: left;
+	margin: 2px;
+	padding: 2px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+	text-transform: capitalize;
+	width: 100%;
+	text-shadow: 1px 1px 0 #999;
 }
 #right-arrow::selection, *::selection
 {
