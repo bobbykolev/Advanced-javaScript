@@ -96,7 +96,7 @@ h2, h3, h4, h5
 	text-shadow: 1px 1px 0 #999;
 }
 
-#right-arrow::selection, *::selection
+#right-arrow::selection, #left-arrow::selection, #slider::selection,  #wrapper::selection
 {
 	display:none;
 }​
