@@ -39,7 +39,7 @@ $(document).ready(function () {
                 nextContent = $('#slider .first');
 
             curContent.removeClass('current').addClass('previous');
-            nextContent.removeClass('previous').addClass('current');
+            nextContent.hide().removeClass('previous').slideDown('slow').addClass('current');
     }
     function prev() {
        var curContent = $('.current');
@@ -47,7 +47,7 @@ $(document).ready(function () {
             if (prevContent.length == 0)
                 prevContent = $('#slider .last');
             curContent.removeClass('current').addClass('previous');
-            prevContent.removeClass('previous').addClass('current');
+            prevContent.hide().removeClass('previous').slideDown('slow').addClass('current');
     }
         setInterval(next, 5000);
 
