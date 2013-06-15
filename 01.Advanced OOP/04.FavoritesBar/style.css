@@ -1,0 +1,34 @@
+.fav-url 
+{
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px dotted #ccc;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.fav-url:hover 
+{
+    color: red;
+}
+
+.fav-folder 
+{
+    float: left;
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px dotted #ccc;
+}
+
+.fav-folder:hover 
+{
+    cursor: pointer;
+}
+
+ul 
+{
+    list-style: none;
+}

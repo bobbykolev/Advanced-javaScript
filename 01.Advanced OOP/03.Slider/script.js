@@ -8,7 +8,24 @@ $(document).ready(function () {
         }
     }
 };
-    var srcArray = this.paths || ["images/strawberries.png", "images/papaya.png", "images/figs.png", "images/cherries.png"];
+
+ //the thumbnais initializing
+    var thePaths = Object.create(addThumbs);
+    var inputArr = ["images/strawberries.png", 
+                    "images/papaya.png", 
+                    "images/figs.png", 
+                    "images/cherries.png", 
+                    "images/cherries-red.png", 
+                    "images/kiwis.png", 
+                    "images/apples.png"];
+    thePaths.init(inputArr);
+
+    $('li').on('click', function () {
+        var rel = $(this).find('img').attr('src');
+        $("#slide-img").attr("src", rel);
+    });
+
+    var srcArray = inputArr;
     var i = 0;
     var l = srcArray.length;
 
@@ -17,6 +34,7 @@ $(document).ready(function () {
     $("#right-arrow").on('click', prev);
 
     function next() {
+
         var index = srcArray.indexOf($("#slide-img").attr("src"));
         if (index == 0) {
             index = l
@@ -43,15 +61,8 @@ $(document).ready(function () {
     $("#right-arrow").on('mouseup', function() {
     $("#right-arrow").css({'background': 'url(images/right.png)'});
 });
-    //setInterval(next, 3000);
+    setInterval(prev, 4000);
 
-    var thePaths = Object.create(addThumbs);
-    thePaths.init(["images/strawberries.png", "images/papaya.png", "images/figs.png", "images/cherries.png", "images/cherries-red.png", "images/kiwis.png", "images/apples.png"]);
-
-    $('li').on('click', function () {
-        var rel = $(this).find('img').attr('src');
-        $("#slide-img").attr("src", rel);        
-    });
 });
 
 
