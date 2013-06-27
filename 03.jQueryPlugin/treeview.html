@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery Treeview</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/script.js"></script>
+		<script type="text/javascript">
+       $(document).ready(function() {
+            $('.treeview').treeview({
+                collapsed: true, //true or false
+                speed: "normal" //"slow", "fast", "normal" or ineger in milliseconds
+            });
+      });
+ </script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>jQuery Treeview</h1>
+			<ul class="treeview">
+				<li>
+					<span class="arrow"><strong>Item</strong></span>
+					<ul>
+						<li><a href="#">Sub Item</a></li>
+						<li><a href="#">Sub Item</a></li>
+						<li><a href="#">Sub Item</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+				<li>
+					<span class="arrow"><strong>Item</strong></span>
+					<ul>
+						<li>
+							<span class="arrow"><strong>Sub Item</strong></span>
+							<ul>
+								<li><a href="#">Sub Sub Item</a></li>
+								<li><a href="#">Sub Sub Item</a></li>
+								<li><a href="#">Sub Sub Item</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Sub Item</a></li>
+						<li>
+							<span class="arrow"><strong>Sub Item</strong></span>
+							<ul>
+								<li><a href="#">Item</a></li>
+								<li>
+									<span class="arrow"><strong>Sub Sub Item</strong></span>	
+									<ul>
+										<li><a href="#">Sub Sub Sub Item</a></li>
+										<li><a href="#">Sub Sub Sub Item</a></li>
+										<li><a href="#">Sub Sub Sub Item</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Sub Sub Item</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Item</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

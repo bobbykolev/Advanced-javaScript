@@ -1,0 +1,54 @@
+#wrapper:after
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+body
+{
+	font-family: Verdana, Tahoma, sans-serif;
+	background: url(images/gray_jean.png);
+	color: #87c41c;
+}
+h1
+{
+	text-shadow:1px 1px 1px #666;
+	color: #87c41c;
+	margin-bottom: 30px;
+}
+li a
+{
+	text-decoration: none;
+	color: rgba(135,196,100,1);
+	cursor: default;
+}
+li a:hover
+{
+	color: #66923e;
+}
+#wrapper
+{
+	max-width:960px;
+	margin: 20px;
+}
+ul li
+{
+	list-style-type: none;
+}
+li>strong
+{
+	cursor: pointer;
+}
+.arrow
+{
+	display: inline-block;
+
+	margin-left: -14px;
+	padding-left: 14px;
+	background-image: url(images/arr.png);
+	background-repeat: no-repeat; 
+}
+strong 
+{
+	font-weight: bold;
+}
