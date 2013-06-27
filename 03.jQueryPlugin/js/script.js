@@ -7,7 +7,7 @@
         }
         var defaults = { 
             collapsed: (options.collapsed != undefined)? options.collapsed : true, 
-            speed: options.speed || 500
+            speed: options.speed || "normal"
         };
             this.find('li>ul').show();
             if(defaults.collapsed == true) {
