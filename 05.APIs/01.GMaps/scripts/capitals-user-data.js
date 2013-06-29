@@ -7,8 +7,8 @@ var listOfCapitalsData = [
     "img": "images/sofia.jpg"
 },
 {
-    "lat": 40.33084263909575,
-    "lon": -3.6749267578125,
+    "lat": 40.41611,
+    "lon": -3.703187,
     "title": "Madrid",
     "info": "Madrid (English /məˈdrɪd/, Spanish: [maˈðɾið]) is the capital of Spain and its largest city.It is the third-largest city in the European Union. The city is located on the Manzanares river...",
     "img": "images/madrid.jpg"

@@ -22,7 +22,8 @@ $(document).ready(function () {
                     center: new google.maps.LatLng(listOfCapitalsData[this.index].lat, listOfCapitalsData[this.index].lon),
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
-                $('#map').empty();
+                $('#map').fadeOut(1);
+                $('#map').fadeIn();
                 map = new google.maps.Map(document.getElementById('map'),
                    mapOptions);
                 var marker = new google.maps.Marker({
