@@ -14,7 +14,7 @@ $(document).ready(function () {
             }
         },
         renderMap: function (index) {
-
+            
             function initialize() {
                 this.index = index;
                 var mapOptions = {
@@ -25,7 +25,6 @@ $(document).ready(function () {
                 $('#map').empty();
                 map = new google.maps.Map(document.getElementById('map'),
                    mapOptions);
-
                 var marker = new google.maps.Marker({
                     position: map.getCenter(),
                     map: map,
@@ -40,7 +39,6 @@ $(document).ready(function () {
                     infowindow.open(map, marker);
                     map.panTo(marker.getPosition());
                 });
-
             }
             google.maps.event.addDomListener(window, 'load', initialize());
         }
@@ -67,7 +65,7 @@ $(document).ready(function () {
     }
     function prev() {
         var i = $("#map-border").attr("class");
-        if (i == -1) {
+        if (i == 0) {
             i = listOfCapitalsData.length;
         };
         theMap.renderMap(parseInt(i) - 1);
