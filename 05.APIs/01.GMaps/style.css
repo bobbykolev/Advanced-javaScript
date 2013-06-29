@@ -11,6 +11,7 @@ ul, li
 }
 body
 {
+	font-size: 12px;
 	font-family: Verdana, Tahoma, sans-serif;
 	background: url(images/gray_jean.png);
 	color: rgba(135,196,100,1);
@@ -31,6 +32,7 @@ h1
 {
 	float: left;
 	width: 584px;
+	height: 300px;	
 	padding: 8px;
 	border: 1px solid #ccc;
 	background: #fff;
@@ -103,10 +105,12 @@ li> h3
 {
 	position: absolute;
 	margin-top: -25px;
+	margin-left: -8px;
 	font-size: 12px;
 	font-weight: bold;
 	color: rgba(135,196,28,0.8);
 	text-transform: capitalize;
+	width: 100px;
 }
 
 #right-arrow::selection, #left-arrow::selection, #wrapper::selection, #map-border::selection
