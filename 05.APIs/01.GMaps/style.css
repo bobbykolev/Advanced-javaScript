@@ -67,7 +67,7 @@ h1
 	border-radius: 3px;
 	width: 98px;
 }
-#maps-list li> img
+#maps-list li > img
 {
 	width: 100%;
 	opacity: 0.8;
@@ -109,7 +109,7 @@ li> h3
 	margin-left: -8px;
 	font-size: 12px;
 	font-weight: bold;
-	color: rgba(135,196,28,0.8);
+	color: rgba(135,196,28,1);
 	text-transform: capitalize;
 	width: 100px;
 }
