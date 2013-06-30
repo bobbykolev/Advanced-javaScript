@@ -1,0 +1,129 @@
+#wrapper:after, #map-container:after, #map-border:after
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+ul, li
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	font-size: 12px;
+	font-family: Verdana, Tahoma, sans-serif;
+	background: url(images/gray_jean.png);
+	color: rgba(135,196,100,1);
+}
+h1
+{
+	text-shadow:1px 1px 1px #666;
+	color: #87c41c;
+	font-size: 30px;
+}
+#wrapper
+{
+	max-width:656px;
+	margin: 20px auto;
+	text-align: center;
+}
+#gPlus
+{
+	height: 80px;
+	text-align: center;
+	padding: 20px;
+}
+#player-border
+{
+	width: 640px;
+	padding: 8px;
+	margin: auto;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px #ccc;
+}
+#profile
+{
+	float: right;
+}
+#revokeButton
+{
+	margin: 40px 5px 0 0;
+	float: left;
+	padding: 5px;
+	border:none;
+	border-radius: 3px;
+	background: #DD4B39;
+	color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	font-size: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#revokeButton:hover
+{
+	background: #DD4B39;
+	box-shadow: 0 0 5px #aaa;
+}
+#revokeButton:active
+{
+	background: #DD4B39;
+	box-shadow: 0 0 1px #999;
+}
+#controls
+{
+	margin-top: 20px;
+	padding: 20px 0 30px 5px;
+	text-align: left;
+	border-top:1px dotted rgba(135,196,100,1);
+}
+.controls
+{
+	float: right;
+	padding: 5px;
+	margin: 2px;
+	border:none;
+	border-radius: 3px;
+	background: rgba(135,196,100,1);
+	color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	font-size: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.controls:hover
+{
+	background: rgba(135,196,100,1);
+	box-shadow: 0 0 5px #aaa;
+}
+.controls:active
+{
+	background: rgba(135,196,100,1);
+	box-shadow: 0 0 1px #999;
+}
+#load-video, #playlist
+{
+	background: none;
+	border: none;
+	padding: 0 5px;
+	font-size: 12px;
+	color: rgba(135,196,100,1);
+	width: 300px;
+	height: 14px;
+}
+
+#gshare
+{
+	float: left;
+}
+footer
+{
+	padding: 10px;
+	border-top:1px dotted rgba(135,196,100,1);
+	font-size: 11px;
+	color: #aaa;
+	margin: auto;
+	text-shadow:1px 1px 0 rgba(135,196,100,0.5);
+}
