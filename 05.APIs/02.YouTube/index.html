@@ -20,7 +20,7 @@
             <h1>G+ YouTube</h1>
             <div id="gPlus">
                 <div id="gshare">
-                    <g:plus action="share" href="http://bobbykolev.cloudvps.bg/gplus-youtube/" id="share-tag"></g:plus>
+                    <g:plus action="share" href="http://www.youtube.com/watch?v=ZWir6wUkPtw" id="share-tag"></g:plus>
                 <script type="text/javascript"> //put this after the last share tag
                     (function () {
                         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -49,9 +49,12 @@
             </div>
             <div id="controls">
                 <span>Single Video: </span><input type="text" id="load-video" value="ZWir6wUkPtw"/>
-                <button class="controls" id="pause">Pause video</button>
-                <button class="controls" id="play">Play video</button>
+                <button class="controls" id="unmute">Unmute</button>
+                <button class="controls" id="mute">Mute</button>
+                <button class="controls" id="pause">Pause</button>
+                <button class="controls" id="play">Play</button>
                 <button class="controls" id="single-video">Load video</button>
+                <input type="range" id="vol" min="0" max="100" value="50" />
                 <br><br>
                 <span>Playlist: </span><input type="text" id="playlist" value="jaozesAPtcU,u5uf882k2So,Bkjv9SscotY">
                 <button class="controls" id="next">Next</button>

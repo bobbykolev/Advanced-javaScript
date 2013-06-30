@@ -1,7 +1,9 @@
+//hide content
    $('#player-border').hide();
    $('#revokeButton').hide();
    $('#controls').hide();
 
+//chacks the singIn and shows the content and hiding the signIn button
    function signinCallback(authResult) {
   if (authResult['access_token']) {
     $('#player-border').fadeIn();
@@ -28,10 +30,10 @@
     console.log('There was an error: ' + authResult['error']);
   }
 }
-
+//sets the disconection and clear the content and shows the signIn button
 function disconnectUser(access_token) {
   var revokeUrl = 'https://accounts.google.com/o/oauth2/revoke?token=' +
-      access_token;
+      gapi.auth.getToken().access_token;
 
   // Perform an asynchronous GET request.
   $.ajax({
@@ -62,6 +64,7 @@ function disconnectUser(access_token) {
 $('#revokeButton').click(disconnectUser);  
 
 
+//YouTube
  var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
@@ -80,7 +83,6 @@ function onPlayerReady(event) {
 
 document.getElementById('single-video').addEventListener('click', function () {
     var video = document.getElementById('load-video').value;
-
     player.loadVideoById(video, 0, "large");
 }, false);
 
@@ -105,4 +107,15 @@ document.getElementById('previous').addEventListener('click', function () {
 document.getElementById('next').addEventListener('click', function () {
     player.nextVideo();
 }, false);
-  
+
+document.getElementById('mute').addEventListener('click', function () {
+    player.mute();
+}, false);
+
+document.getElementById('unmute').addEventListener('click', function () {
+    player.unMute();
+}, false);
+
+document.getElementById('vol').addEventListener('change', function (number) {
+    player.setVolume(number.target.value);
+}, false);
