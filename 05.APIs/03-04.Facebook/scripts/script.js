@@ -1,4 +1,4 @@
-$('#light-box').css('display','none');
+$('#light-box').hide(1);
 
     
 
@@ -61,10 +61,10 @@ var ev = function(){
         var src = $(this).attr('src');
         $('#light-box').empty();
         $('#light-box').append('<div id="border"><img src="'+src+'?type=large"></div>');
-        $('#light-box').css('display','block');
+        $('#light-box').slideDown("fast");
     })
     $('#light-box').on('click', function(){
-        $('#light-box').css('display','none');
+        $('#light-box').fadeOut("slow");
     })
 }
 
