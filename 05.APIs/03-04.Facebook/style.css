@@ -1,4 +1,4 @@
-#wrapper:after, #map-container:after, #map-border:after
+#wrapper:after, #light-box:after, .border:after
 {
 	content: "";
 	display: block;
@@ -46,4 +46,11 @@ h1
 img 
 {
 	margin: 5px;
+}
+#light-box img 
+{
+	position: relative;
+	border: 5px solid #fff;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000;
 }

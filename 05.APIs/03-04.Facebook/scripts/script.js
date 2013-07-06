@@ -1,7 +1,5 @@
 $('#light-box').hide(1);
 
-    
-
 function getProfileInfo() {
     FB.api('/me', function (response) {
         var holder = $("#profile-info");
@@ -51,7 +49,7 @@ function getFriends() {
         for (i = 0; i < response.data.length; i++) {
             var friendPictureUrl = 'https://graph.facebook.com/' + response.data[i].id + '/picture';
             var friendName = response.data[i].name.split(' ').join('');
-            friendsHolder.append("<img class=\"images\" src =" + friendPictureUrl + " title=" + friendName + "/>");
+            friendsHolder.append("<img class=\"images\" src =" + friendPictureUrl+ " alt=" + friendName + "title=" + friendName + "/>");
         }
          ev();
     });
